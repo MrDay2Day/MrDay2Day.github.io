@@ -6,9 +6,9 @@ body{
     grid-template-columns: 1;
     align-content: center;
     justify-content: center;
-    grid-template-areas: 
+    grid-template-areas:
         "content"
-    
+
 }
 #content{
     grid-area: content;
@@ -20,7 +20,7 @@ body{
     grid-gap: 20px;
     align-content: center;
     justify-content: center;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "social"
@@ -35,7 +35,8 @@ body{
     grid-row: 100%;
     filter: grayscale(70%);
 }
-#image1:hover{
+#image1:hover,
+#image1:focus{
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
         transition: 2s filter linear;
@@ -52,7 +53,7 @@ body{
         grid-gap: 20px;
         align-content: center;
         justify-content: center;
-        grid-template-areas: 
+        grid-template-areas:
             "header         header      header"
             "main           main        main"
             "left           center      right"
@@ -67,7 +68,8 @@ body{
         grid-row: 100%;
         filter: grayscale(70%);
     }
-    #image1:hover{
+    #image1:hover,
+    #image1:focus{
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
         transition: 2s filter linear;
@@ -116,7 +118,8 @@ header{
     min-height: 200px;
     background-color: #4d4d4d;
 }
-.info:hover{
+.info:hover,
+.info:focus{
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     transition: 2s filter linear;
