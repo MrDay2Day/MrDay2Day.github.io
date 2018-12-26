@@ -12,7 +12,8 @@ body{
 }
 #content{
     grid-area: content;
-    width: 100%;
+    max-width: 800px;
+    /*width: 100%;*/
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1;
@@ -30,22 +31,24 @@ body{
         "footer"
 }
 #image1{
-    height: 200px;
+    height: 150px;
     grid-column: 1;
     grid-row: 100%;
     filter: grayscale(70%);
 }
+
 #image1:hover,
-#image1:focus{
+#image1:hover{
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
         transition: 2s filter linear;
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
 
     #content{
         grid-area: content;
-        width: minmax(auto,1700px);
+        max-width: 1400px;
+        /*width: minmax(auto,800px);*/
         font-family: Arial, Helvetica, sans-serif;
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -61,7 +64,7 @@ body{
             "footer         footer      footer"
     }
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
     #image1{
         height: 400px;
         grid-column: 1;
@@ -69,11 +72,22 @@ body{
         filter: grayscale(70%);
     }
     #image1:hover,
-    #image1:focus{
+    #image1:hover{
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
         transition: 2s filter linear;
     }
+}
+@media screen and (min-width: 1200px){
+  .info{
+      position: relative;
+      filter: grayscale(70%);
+      text-align: center;
+      margin: 3%;
+      min-width: auto;
+      min-height: 200px;
+      background-color: #4d4d4d;
+  }
 }
 main{
     grid-area: main;
@@ -115,11 +129,11 @@ header{
     text-align: center;
     margin: 3%;
     min-width: auto;
-    min-height: 200px;
+    min-height: 100px;
     background-color: #4d4d4d;
 }
 .info:hover,
-.info:focus{
+.info:hover{
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     transition: 2s filter linear;
