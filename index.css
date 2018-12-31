@@ -34,15 +34,8 @@ body{
     height: 150px;
     grid-column: 1;
     grid-row: 100%;
-    filter: grayscale(70%);
 }
 
-#image1:hover,
-#image1:hover{
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-        transition: 2s filter linear;
-}
 @media screen and (min-width: 1200px){
 
     #content{
@@ -66,16 +59,9 @@ body{
 }
 @media screen and (min-width: 1200px){
     #image1{
-        height: 400px;
+        height: 250px;
         grid-column: 1;
         grid-row: 100%;
-        filter: grayscale(70%);
-    }
-    #image1:hover,
-    #image1:hover{
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-        transition: 2s filter linear;
     }
 }
 @media screen and (min-width: 1200px){
@@ -94,11 +80,11 @@ main{
     text-align: center;
 }
 h1{
-    font-size: 3em;
+    font-size: 1.7em;
 }
 p{
     margin: 0;
-    font-size: 1.2em;
+    font-size: 0.9em;
 }
 header{
     grid-area: header;
@@ -108,7 +94,8 @@ header{
     grid-auto-rows: minmax(auto,auto);
     align-content: center;
     justify-content: center;
-    padding: 5%;
+    padding: 2%;
+    border-radius: 25px;
 }
 #left{
     grid-area: left;
@@ -124,8 +111,10 @@ header{
     grid-area: right;
 }
 .info{
+    border-radius: 25px;
+    overflow:hidden;
     position: relative;
-    filter: grayscale(70%);
+    filter: grayscale(50%);
     text-align: center;
     margin: 3%;
     min-width: auto;
@@ -141,6 +130,7 @@ header{
     transition: 6s transform linear;
 }
 footer{
+    border-radius: 25px;
     grid-area: footer;
     display: grid;
     grid-template-columns: 1;
@@ -156,9 +146,9 @@ footer{
     text-align: center;
 }
 .icon{
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     max-height: 50px;
-    margin: 20px
+    margin: 20px;
 }
 .icon:hover{
     -webkit-filter: grayscale(0%);
@@ -177,7 +167,7 @@ h3{
     grid-column: 1;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
+    font-size: 0.9em;
 }
 #fineprint{
     font-size: 0.7em;
