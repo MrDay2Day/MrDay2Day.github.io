@@ -73,6 +73,7 @@ body{
       min-width: auto;
       min-height: 200px;
       background-color: #4d4d4d;
+      transition: 6s;
   }
 }
 main{
@@ -151,13 +152,14 @@ footer{
     filter: grayscale(50%);
     max-height: 50px;
     margin: 20px;
+    transition: 6s;
 }
 .icon:hover{
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     transition: 2s filter linear;
     transform: scale(1.5);
-    transition: 6s transform linear;
+    
 }
 footer p{
     text-align: center;
