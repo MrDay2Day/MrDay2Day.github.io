@@ -120,6 +120,7 @@ header{
     min-width: auto;
     min-height: 100px;
     background-color: #4d4d4d;
+    transition: 6s;
 }
 .info:hover,
 .info:hover{
@@ -127,7 +128,7 @@ header{
     filter: grayscale(0%);
     transition: 2s filter linear;
     transform: scale(1.1);
-    transition: 6s transform linear;
+    
 }
 footer{
     border-radius: 25px;
