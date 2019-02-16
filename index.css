@@ -129,6 +129,7 @@ header{
     filter: grayscale(0%);
     transition: 2s filter linear;
     transform: scale(1.1);
+    transition: 6s;
     
 }
 footer{
@@ -159,6 +160,7 @@ footer{
     filter: grayscale(0%);
     transition: 2s filter linear;
     transform: scale(1.5);
+    transition: 6s;
     
 }
 footer p{
